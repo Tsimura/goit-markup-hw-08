@@ -1,36 +1,63 @@
 .hero {
   text-align: center;
   background: #2f303a;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+
   padding-top: 118px;
   padding-bottom: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__bg {
-  // max-width: 1600px;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/bghero.jpg');
+    url('../images/mobile/bg-main.jpg');
+  background-position: center;
+
   block-size: cover;
+  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: $mobile;
+  }
+  @media screen and (min-width: 768px) {
+    width: $tablet;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tablet/bg-main.jpg');
+  }
+  @media screen and (min-width: 1200px) {
+    width: $desktop;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/desktop/bg-main.jpg');
+  }
 }
 
 .hero__main-title {
   font-weight: 900;
-  // font-size: 44px;
   font-size: 26px;
-  // line-height: 1.36;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
   color: var(--primary-white-color);
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .hero__button {
