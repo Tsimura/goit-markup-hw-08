@@ -18,7 +18,7 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container__header">
         <nav class="main-nav">
           <a class="logo header__logo link" href="./index.html">
@@ -60,8 +60,59 @@
             >
           </li>
         </ul>
+        <button type="button" class="open-mob-menu">
+          <svg class="burger-btn">
+            <use href="./images/icons.svg#icon-burger-mob-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu">
+        <div class="container">
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-list__item">
+              <a class="mobile-menu-list__link link mobile-menu-list-current" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu-list__item">
+              <a class="mobile-menu-list__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu-list__item">
+              <a class="mobile-menu-list__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts__item">
+              <a
+                class="mobile-menu-contacts__link link mobile-menu-contacts-current"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts__item">
+              <a class="mobile-menu-contacts__link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu-social-networks list">
+            <li class="mobile-menu-social-networks__item">
+              <a class="mobile-menu-social-networks__link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu-social-networks__item">
+              <a class="mobile-menu-social-networks__link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-social-networks__item">
+              <a class="mobile-menu-social-networks__link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-social-networks__item">
+              <a class="mobile-menu-social-networks__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <main>
       <!--Герой сайта-->

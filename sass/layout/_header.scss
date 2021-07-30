@@ -5,6 +5,9 @@
 .container__header {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .main-nav {
@@ -13,8 +16,11 @@
 }
 
 .menu {
-  display: flex;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -22,10 +28,13 @@
 }
 
 .header-contacts {
-  display: flex;
-  align-items: center;
-  align-items: flex-end;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+    margin-left: auto;
+  }
 }
 
 .header-contacts__mail {
@@ -120,4 +129,79 @@
 .header__link--stretch {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.mobile-menu {
+  position: absolute;
+  background-color: var(--primary-white-color);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.open-mob-menu {
+  background: unset;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-btn {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+}
+
+.mobile-menu-list {
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+  &-current {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu-contacts {
+  margin-bottom: 64px;
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: var(--corol-header-icon);
+  }
+  .mobile-menu-contacts-current {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 0.85;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+}
+.mobile-menu-social-networks {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
 }
