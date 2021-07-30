@@ -1,12 +1,10 @@
-// // указать правило для десктопа
-// .our-business {
-//   display: none;
-// }
-// @media screen and (min-width: 1200px) {
-//   .our-business {
-//     display: block;
-//   }
-// }
+.our-work {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .our-business {
   padding-top: 47px;
   padding-bottom: 94px;

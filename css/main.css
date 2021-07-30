@@ -658,6 +658,16 @@ img {
   color: #757575;
 }
 
+.our-work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-work {
+    display: block;
+  }
+}
+
 .our-business {
   padding-top: 47px;
   padding-bottom: 94px;
