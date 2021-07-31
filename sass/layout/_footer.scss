@@ -2,13 +2,27 @@
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .box {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
+.footer-left {
+  margin-bottom: 60px;
+}
+.address-in-footer {
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+}
 .footer-address-point {
   display: block;
   font-style: normal;
@@ -66,7 +80,12 @@
 .footer-right {
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+  // margin-left: 70px;
+  @media screen and (min-width: 480px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-invite {
@@ -79,4 +98,7 @@
   color: var(--primary-white-color);
 
   margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }

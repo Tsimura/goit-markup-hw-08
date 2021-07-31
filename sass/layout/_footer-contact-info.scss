@@ -1,5 +1,10 @@
 .subscription {
-  margin-left: 93px;
+  // margin-left: 93px;
+  @media screen and (min-width: 480px) {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 }
 .footer-subscription-title {
   font-weight: bold;
@@ -12,8 +17,8 @@
 }
 
 .footer-subscription-form {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
 }
 
 .footer-subscription-form-input {

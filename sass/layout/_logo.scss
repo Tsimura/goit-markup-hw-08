@@ -26,6 +26,9 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
 
 .footer__logo-title {
