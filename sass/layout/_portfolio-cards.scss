@@ -8,9 +8,8 @@
   }
 }
 .portfolio-cards-item {
-  max-width: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
+  // max-width: 370px;
+
   flex-basis: calc((100% - 90px) / 3);
 
   background: #ffffff;
@@ -26,6 +25,8 @@
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
+
+    margin-top: 30px;
     margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
