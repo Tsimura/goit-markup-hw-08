@@ -5,9 +5,11 @@
 .container__header {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 767px) {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
+
+  // @media screen and (min-width: 767px) {
+  //   justify-content: space-between;
+  // }
 }
 
 .main-nav {

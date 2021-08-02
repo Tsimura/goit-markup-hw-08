@@ -34,7 +34,7 @@
   }
 }
 .address-in-footer {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -54,6 +54,9 @@
   &:hover,
   &:focus {
     color: #757575;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 }
 
@@ -89,6 +92,9 @@
   &:hover,
   &:focus {
     color: #757575;
+  }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 }
 
