@@ -722,6 +722,7 @@ img {
 
 .mobile-menu-social-networks {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-menu-social-networks__item:not(:last-child) {

@@ -264,7 +264,7 @@
 }
 .mobile-menu-social-networks {
   display: flex;
-
+  flex-wrap: wrap;
   &__item {
     &:not(:last-child) {
       margin-right: 20px;

@@ -185,29 +185,89 @@
           <h2 class="our-business__title">Чем мы занимаемся</h2>
           <ul class="our-business__list list">
             <li class="our-business__item">
-              <img src="./images/img1.jpg" alt="Верстка страниц" width="370" height="294" />
+              <!-- Зразок для картинок
+              <picture>
+                  <source media="(min-width: 1200px)"
+                      srcset="./images/about/about-img-desktop-1.webp 1x, ./images/about/about-img-desktop-1@2x.webp 2x"
+                      type="image/webp">
+                  <source media="(min-width: 1200px)"
+                      srcset="./images/about/about-img-desktop-1.jpg 1x, ./images/about/about-img-desktop-1@2x.jpg 2x">
+
+                  <source media="(min-width: 768px)"
+                      srcset="./images/about/about-img-tablet-1.webp 1x, ./images/about/about-img-tablet-1@2x.webp 2x"
+                      type="image/webp">
+                  <source media="(min-width: 768px)"
+                      srcset="./images/about/about-img-tablet-1.jpg 1x, ./images/about/about-img-tablet-1@2x.jpg 2x">
+
+                  <img class="about-list-img" src="#" alt="мастер бреет бороду клиенту" />
+              </picture>
+              -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                />
+                <img
+                  class="our-business__img"
+                  src="#"
+                  alt="Верстка страниц"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="our-business__item-overlay">
                 <p class="our-business__item-overlay-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="our-business__item">
-              <img
-                src="./images/img2.jpg"
-                alt="Оптимизация для мобильных приложений"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img2.webp 1x, ./images/img2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                />
+                <img
+                  class="our-business__img"
+                  src="#"
+                  alt="Оптимизация для мобильных приложений"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="our-business__item-overlay">
                 <p class="our-business__item-overlay-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="our-business__item">
-              <img
-                src="./images/img3.jpg"
-                alt="Поддержка готового продукта"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                />
+                <img
+                  class="our-business__img"
+                  src="#"
+                  alt="Поддержка готового продукта"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="our-business__item-overlay">
                 <p class="our-business__item-overlay-text">Дизайнерские решения</p>
               </div>
@@ -222,13 +282,61 @@
           <h2 class="teem-title">Наша команда</h2>
           <ul class="teem-link-list list">
             <li class="teem-link-list-item">
-              <img
-                class="teem-link-list-img"
-                src="./images/mobile/product_designer.jpg"
-                alt="Игорь Демьяненко"
-                width=" "
-                height=" "
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/product_designer.webp    1x,
+                    ./images/desktop/product_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/product_designer.jpg    1x,
+                    ./images/desktop/product_designer@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/product_designer.webp    1x,
+                    ./images/tablet/product_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/product_designer.jpg    1x,
+                    ./images/tablet/product_designer@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/product_designer.webp    1x,
+                    ./images/mobile/product_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/product_designer.jpg    1x,
+                    ./images/mobile/product_designer@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="teem-link-list-img"
+                  src="#"
+                  alt="Игорь Демьяненко"
+                  width=" "
+                  height=" "
+                />
+              </picture>
+
               <div class="teem-description">
                 <h3 class="teem-links-item-title">Игорь Демьяненко</h3>
                 <p class="teem-links-item-description" lang="en">Product Designer</p>
@@ -265,13 +373,55 @@
               </div>
             </li>
             <li class="teem-link-list-item">
-              <img
-                class="teem-link-list-img"
-                src="./images/mobile/frontend_developer.jpg"
-                alt="Ольга Репина"
-                width=""
-                height=""
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/frontend_developer.webp    1x,
+                    ./images/desktop/frontend_developer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/frontend_developer.jpg    1x,
+                    ./images/desktop/frontend_developer@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/frontend_developer.webp    1x,
+                    ./images/tablet/frontend_developer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/frontend_developer.jpg    1x,
+                    ./images/tablet/frontend_developer@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/frontend_developer.webp    1x,
+                    ./images/mobile/frontend_developer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/frontend_developer.jpg    1x,
+                    ./images/mobile/frontend_developer@2x.jpg 2x
+                  "
+                />
+                <img class="teem-link-list-img" src="#" alt="Ольга Репина" width="" height="" />
+              </picture>
+
               <div class="teem-description">
                 <h3 class="teem-links-item-title">Ольга Репина</h3>
                 <p class="teem-links-item-description" lang="en">Frontend Developer</p>
@@ -308,13 +458,37 @@
               </div>
             </li>
             <li class="teem-link-list-item">
-              <img
-                class="teem-link-list-img"
-                src="./images/mobile/marketing.jpg"
-                alt="Николай Тарасов"
-                width=""
-                height=""
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/desktop/marketing.webp 1x, ./images/desktop/marketing@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/desktop/marketing.jpg 1x, ./images/desktop/marketing@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/marketing.webp 1x, ./images/tablet/marketing@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/marketing.jpg 1x, ./images/tablet/marketing@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/mobile/marketing.webp 1x, ./images/mobile/marketing@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/mobile/marketing.jpg 1x, ./images/mobile/marketing@2x.jpg 2x"
+                />
+                <img class="teem-link-list-img" src="#" alt="Николай Тарасов" width="" height="" />
+              </picture>
+
               <div class="teem-description">
                 <h3 class="teem-links-item-title">Николай Тарасов</h3>
                 <p class="teem-links-item-description" lang="en">Marketing</p>
@@ -351,13 +525,49 @@
               </div>
             </li>
             <li class="teem-link-list-item">
-              <img
-                class="teem-link-list-img"
-                src="./images/mobile/ui_designer.jpg"
-                alt="Михаил Ермаков"
-                width=""
-                height=" "
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/ui_designer.webp    1x,
+                    ./images/desktop/ui_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/desktop/ui_designer.jpg    1x,
+                    ./images/desktop/ui_designer@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/ui_designer.webp    1x,
+                    ./images/tablet/ui_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet/ui_designer.jpg 1x, ./images/tablet/ui_designer@2x.jpg 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/ui_designer.webp    1x,
+                    ./images/mobile/ui_designer@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/mobile/ui_designer.jpg 1x, ./images/mobile/ui_designer@2x.jpg 2x"
+                />
+                <img class="teem-link-list-img" src="#" alt="Михаил Ермаков" width="" height=" " />
+              </picture>
+
               <div class="teem-description">
                 <h3 class="teem-links-item-title">Михаил Ермаков</h3>
                 <p class="teem-links-item-description" lang="en">UI Designer</p>
