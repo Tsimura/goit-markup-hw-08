@@ -162,7 +162,19 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .social-list-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-list-icon {
@@ -1148,6 +1160,7 @@ img {
 .filter-list-link {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1190,8 +1203,20 @@ img {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 1200px) {
+  .filter-list-button {
+    margin-bottom: 0px;
+  }
+}
+
 .filter-list-button:nth-child(-n + 3) {
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list-button:nth-child(-n + 3) {
+    margin-bottom: unset;
+  }
 }
 
 .filter-title-name {
@@ -1234,9 +1259,16 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio-cards-item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-cards-item {
     flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: unset;
     margin-top: 30px;
     margin-left: 30px;
   }
@@ -1311,16 +1343,20 @@ img {
     display: flex;
     align-items: baseline;
     margin-right: 93px;
+    margin-bottom: 0px;
   }
 }
 
-.footer-left {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer-left {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-left {
     margin-right: 70px;
+    margin-bottom: 0px;
   }
 }
 
